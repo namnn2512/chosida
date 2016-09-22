@@ -51,6 +51,7 @@
     "sprint-js": "~0.1.0",
     "typings": "^0.8.1",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "babel-core": "^6.6.5",
     "babel-register": "^6.6.5",
     "babel-plugin-transform-class-properties": "^6.6.0",
