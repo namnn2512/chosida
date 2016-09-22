@@ -7,7 +7,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/fullstack-dev'
+    uri: '  mongodb://chosidauser:Abcde12345-@ds035766.mlab.com:35766/chosidadb'
   },
 
   // Seed database on startup
