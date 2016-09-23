@@ -81,7 +81,8 @@
     "gulp-watch": "^4.3.5",
     "gulp-stylint": "^3.0.0",
     
-    "open": "~0.0.4"
+    "open": "~0.0.4",
+    "lazypipe": "^1.0.1"
   },
   "devDependencies": {
     
