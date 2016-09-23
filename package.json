@@ -52,7 +52,9 @@
     
     "babel-core": "^6.6.5",
     "babel-register": "^6.6.5",
-    "del": "^2.0.2"
+    "del": "^2.0.2",
+    "grunt": "^1.0.1",
+    "grunt-build-control": "^0.7.0"
   },
   "devDependencies": {
     
