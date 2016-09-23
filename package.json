@@ -51,7 +51,8 @@
     "sprint-js": "~0.1.0",
     
     "babel-core": "^6.6.5",
-    "babel-register": "^6.6.5"
+    "babel-register": "^6.6.5",
+    "del": "^2.0.2"
   },
   "devDependencies": {
     
@@ -159,7 +160,7 @@
     "test": "gulp test",
     "postinstall": "./node_modules/.bin/typings install",
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
-    "build": "gulp && npm install --save del",
+    "build": "gulp",
     "start": "gulp serve:dist"
   },
   "private": true
