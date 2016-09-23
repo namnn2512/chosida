@@ -79,7 +79,9 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.5",
     "gulp-watch": "^4.3.5",
-    "gulp-stylint": "^3.0.0"
+    "gulp-stylint": "^3.0.0",
+    
+    "open": "~0.0.4"
   },
   "devDependencies": {
     
