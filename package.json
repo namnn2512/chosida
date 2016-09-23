@@ -159,7 +159,7 @@
     "test": "gulp test",
     "postinstall": "./node_modules/.bin/typings install",
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
-    "build": "gulp",
+    "build": "gulp && npm install --save del",
     "start": "gulp serve:dist"
   },
   "private": true
