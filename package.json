@@ -159,8 +159,7 @@
     "test": "gulp test",
     "postinstall": "./node_modules/.bin/typings install",
     "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update",
-    "start": "babel-node server/app.js",
-    "build": "babel src -d build"
+    "start": "babel-node server/index.js"
   },
   "private": true
 }
