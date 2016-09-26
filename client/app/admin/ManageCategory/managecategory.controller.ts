@@ -3,12 +3,14 @@
 export default class ManageCategoryController {
   categories: Object[];
   $http;
+  _category;
   newCategory = '';
 
   /*@ngInject*/
   constructor($http, Category) {
     // Use the User $resource to fetch all users
     this.$http = $http;
+    this._category = Category;
     this.categories = Category.query();
   }
 
@@ -19,7 +21,10 @@ export default class ManageCategoryController {
 
   addCategory() {
     if (this.newCategory) {
-      this.$http.post('/api/categories', { name: this.newCategory });
+      this.$http.post('/api/categories', { name: this.newCategory })
+      .success(function(data, status, headers, config) {
+          this.categories = this._category.query();
+      });
       this.newCategory = '';
     }
   }
