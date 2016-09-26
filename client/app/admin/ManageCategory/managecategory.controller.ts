@@ -6,8 +6,9 @@ export default class ManageCategoryController {
   newCategory = '';
 
   /*@ngInject*/
-  constructor(Category) {
+  constructor($http, Category) {
     // Use the User $resource to fetch all users
+    this.$http = $http;
     this.categories = Category.query();
   }
 
