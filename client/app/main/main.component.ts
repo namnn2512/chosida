@@ -19,21 +19,11 @@ export class MainController {
   }
 
   $onInit() {
-    this.$http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
-      this.socket.syncUpdates('thing', this.awesomeThings);
-    });
-  }
-
-  addThing() {
-    if (this.newThing) {
-      this.$http.post('/api/things', { name: this.newThing });
-      this.newThing = '';
-    }
-  }
-
-  deleteThing(thing) {
-    this.$http.delete('/api/things/' + thing._id);
+    this.awesomeThings = [{
+      name:'Store Name',
+      image : 'assets/images/iphone.jpg',
+      description : 'Some description'
+    }];
   }
 }
 
@@ -42,6 +32,7 @@ export default angular.module('fullstackApp.main', [
     .config(routing)
     .component('main', {
       template: require('./main.html'),
-      controller: MainController
+      controller: MainController,
+      controllerAs :'main'
     })
     .name;
