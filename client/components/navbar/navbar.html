@@ -14,7 +14,13 @@
         <li ng-repeat="item in $ctrl.menu" ui-sref-active="active">
             <a ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
-        <li ng-show="$ctrl.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+        <li ng-show="$ctrl.isAdmin()" ui-sref-active="active" class="dropdown">
+            <a  data-toggle="dropdown" class="dropdown-toggle">Admin<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a ui-sref="manageuser">Manage User</a></li>
+              <li><a ui-sref="managecategory">Manage Category</a></li>
+            </ul>
+          </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
