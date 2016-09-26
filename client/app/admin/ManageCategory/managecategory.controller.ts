@@ -23,14 +23,28 @@ export default class ManageCategoryController {
     var self = this;
     if (this.newCategory) {
       this.$http.post('/api/categories', { name: this.newCategory })
-      .success(function(data, status, headers, config) {
+      .then(
+       function(response){
           self.categories = self._category.query();
-      });
+       }, 
+       function(response){
+         // failure call back
+       }
+      );
       this.newCategory = '';
     }
   }
 
   deleteCategory(category) {
-    this.$http.delete('/api/categories/' + category._id);
+    var self = this;
+    this.$http.delete('/api/categories/' + category._id)
+      .then(
+       function(response){
+          self.categories = self._category.query();
+       }, 
+       function(response){
+         // failure call back
+       }
+    );
   }
 }
