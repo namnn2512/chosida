@@ -4,11 +4,19 @@
 export default function routes($stateProvider) {
   'ngInject';
   $stateProvider
-    .state('admin', {
-      url: '/admin',
-      template: require('./admin.html'),
-      controller: 'AdminController',
-      controllerAs: 'admin',
+    .state('manageuser', {
+      url: '/manageuser',
+      template: require('./ManageUser/manageuser.html'),
+      controller: 'ManageUserController',
+      controllerAs: 'manageUser',
       authenticate: 'admin'
-    });
+    })
+    .state('managecategory', {
+        url: '/managecategory',
+        referrer: 'main',
+        template: require('./ManageCategory/managecategory.html'),
+        controller: 'ManageCategoryController',
+        controllerAs: 'manageCategory',
+        authenticate: 'admin'
+      });
 };
