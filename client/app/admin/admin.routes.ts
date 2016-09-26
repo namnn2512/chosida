@@ -13,7 +13,6 @@ export default function routes($stateProvider) {
     })
     .state('managecategory', {
         url: '/managecategory',
-        referrer: 'main',
         template: require('./ManageCategory/managecategory.html'),
         controller: 'ManageCategoryController',
         controllerAs: 'manageCategory',
