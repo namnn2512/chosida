@@ -8,4 +8,4 @@ var CategorySchema = new mongoose.Schema({
   active: Boolean
 });
 
-export default mongoose.model('Category', ThingSchema);
+export default mongoose.model('Category', CategorySchema);
