@@ -20,10 +20,11 @@ export default class ManageCategoryController {
   }
 
   addCategory() {
+    var self = this;
     if (this.newCategory) {
       this.$http.post('/api/categories', { name: this.newCategory })
       .success(function(data, status, headers, config) {
-          this.reloadCategory();
+          self.categories = self._category.query();
       });
       this.newCategory = '';
     }
@@ -31,8 +32,5 @@ export default class ManageCategoryController {
 
   deleteCategory(category) {
     this.$http.delete('/api/categories/' + category._id);
-  }
-  reloadCategory(){
-    this.categories = this._category.query();
   }
 }
