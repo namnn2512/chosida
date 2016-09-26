@@ -7,6 +7,7 @@ import {authInterceptor} from './interceptor.service';
 import {routerDecorator} from './router.decorator';
 import {AuthService} from './auth.service';
 import {UserResource} from './user.service';
+import {CategoryResource} from './category.service';
 
 const uiRouter = require('angular-ui-router');
 
@@ -25,5 +26,6 @@ export default angular.module('fullstackApp.auth', [
   .run(routerDecorator)
   .factory('Auth', AuthService)
   .factory('User', UserResource)
+  .factory('Category', CategoryResource)
   .config(['$httpProvider', addInterceptor])
   .name;
