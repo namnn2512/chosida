@@ -42,6 +42,7 @@ angular.module('fullstackApp', [
   account,
   admin,  navbar,
   footer,
+  leftbar,
   main,
   constants,
   socket,
