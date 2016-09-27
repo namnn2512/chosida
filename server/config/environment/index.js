@@ -23,7 +23,7 @@ var all = {
   browserSyncPort: process.env.BROWSER_SYNC_PORT || 3000,
 
   // Server port
-  port: process.env.PORT || 9000,
+  port: process.env.PORT || 5000,
 
   // Server IP
   ip: process.env.IP || '0.0.0.0',
@@ -58,8 +58,8 @@ var all = {
   },
 
   google: {
-    clientID: process.env.GOOGLE_ID || 'id',
-    clientSecret: process.env.GOOGLE_SECRET || 'secret',
+    clientID: process.env.GOOGLE_ID || '403136864361-ecso61meoqqpk96ju75thjrq8tqphif4.apps.googleusercontent.com',
+    clientSecret: process.env.GOOGLE_SECRET || 'r6JiefbC7sjcl8-FEGsvsbWn',
     callbackURL: `${process.env.DOMAIN || ''}/auth/google/callback`
   }
 };
