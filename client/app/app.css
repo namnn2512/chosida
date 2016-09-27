@@ -47,6 +47,7 @@
 @import 'admin/admin.css';
 @import 'main/main.css';
 @import '../components/footer/footer.css';
+@import '../components/leftbar/leftbar.css';
 @import '../components/modal/modal.css';
 @import '../components/navbar/navbar.css';
 @import '../components/oauth-buttons/oauth-buttons.css';

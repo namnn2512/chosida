@@ -6,6 +6,14 @@ export class NavbarComponent {
   menu = [{
     'title': 'Home',
     'state': 'main'
+  },
+  {
+    'title': 'About',
+    'state': 'contact'
+  },
+  {
+    'title': 'Service',
+    'state': 'service'
   }];
   isLoggedIn: Function;
   isAdmin: Function;

@@ -23,10 +23,6 @@
                                  <li ng-repeat="item in $ctrl.menu" ui-sref-active="active">
                                     <a ui-sref="{{item.state}}">{{item.title}}</a>
                                 </li>
-                                <li><a href="work.html">Work</a></li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="contact.html">Contact</a></li>
                                 <li ng-show="$ctrl.isAdmin()" ui-sref-active="active" class="dropdown">
                                     <a data-toggle="dropdown" class="dropdown-toggle">Admin<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
