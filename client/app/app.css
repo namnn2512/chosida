@@ -40,8 +40,6 @@
   color: #000;
   padding: 0.2em 0;
 }
-
-
 /* Component styles are injected through gulp */
 /* inject:css */
 @import 'admin/admin.css';
